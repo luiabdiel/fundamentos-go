@@ -8,7 +8,7 @@ func main() {
 
 	bonus = 0.10
 
-	if salario <= 1320 {
+	if salario < 1320 {
 		salario += (salario * bonus)
 		fmt.Println("Salário com bônus: ", salario)
 		return
