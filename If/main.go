@@ -8,11 +8,27 @@ func main() {
 
 	bonus = 0.10
 
-	if salario < 1320 {
+	if salario <= 1320 {
 		salario += (salario * bonus)
 		fmt.Println("Salário com bônus: ", salario)
-		return
+		// return
 	}
 
 	fmt.Println("Salário: ", salario)
+
+	var isCar bool = true
+	var priceAutomobile float64 = 70000.00
+
+	if isCar {
+		priceAutomobile += 5000.00
+	}
+
+	fmt.Println("Valor final: ", priceAutomobile)
 }
+
+/*
+	< - menor que
+	> - maior que
+	<= - menor ou igual
+	>= maior ou igual
+*/
