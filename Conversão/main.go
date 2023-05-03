@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"reflect"
+	"strconv"
 )
 
 func main() {
@@ -25,4 +26,15 @@ func main() {
 	fmt.Println(reflect.TypeOf(numeroFloat32))
 	fmt.Println(numeroInt64)
 	fmt.Println(reflect.TypeOf(numeroInt64))
+
+	// Conversão de string
+	fmt.Println()
+
+	b, _ := strconv.ParseBool("true")
+	fmt.Printf("%T \n", b)
+	fmt.Println(b)
+
+	altura, _ := strconv.ParseFloat("1.72", 64)
+	fmt.Printf("%T \n", altura)
+	fmt.Println(altura)
 }
