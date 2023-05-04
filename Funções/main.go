@@ -3,12 +3,21 @@ package main
 import "fmt"
 
 func main() {
-	resultado := Soma(1, 2)
-	fmt.Println(resultado)
+	ImprimirMensagem("Calculadora:")
+
+	soma, subtracao, divisao, multiplicacao := Operacoes(1, 2)
+	fmt.Println(soma, subtracao, divisao, multiplicacao)
 }
 
-func Soma(num1 int, num2 int) int {
-	resultado := num1 + num2
+func ImprimirMensagem(mensagem string) {
+	fmt.Println(mensagem)
+}
 
-	return resultado
+func Operacoes(num1 int, num2 int) (soma int, subtracao int, divisao int, multiplicacao int) {
+	soma = num1 + num2
+	subtracao = num1 - num2
+	divisao = num1 / num2
+	multiplicacao = num1 * num2
+
+	return
 }
