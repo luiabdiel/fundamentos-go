@@ -3,11 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	ImprimirMensagem("Hello, Go")
+	resultado := Soma(1, 2)
+	fmt.Println(resultado)
 }
 
-func ImprimirMensagem(mensagem string) {
-	mensagem += ". Fine?"
+func Soma(num1 int, num2 int) int {
+	resultado := num1 + num2
 
-	fmt.Println(mensagem)
+	return resultado
 }
