@@ -13,14 +13,14 @@ func main() {
 }
 
 func reverse[T int | string](slice []T) []T {
-	newInts := make([]T, len(slice))
+	newSlices := make([]T, len(slice))
 
-	newIntsLen := len(slice) - 1
+	newSlicesLen := len(slice) - 1
 	for i := 0; i < len(slice); i++ {
-		newInts[newIntsLen] = slice[i]
+		newSlices[newSlicesLen] = slice[i]
 
-		newIntsLen--
+		newSlicesLen--
 	}
 
-	return newInts
+	return newSlices
 }
