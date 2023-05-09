@@ -12,7 +12,11 @@ func main() {
 	fmt.Println(newStrings)
 }
 
-func reverse[T int | string](slice []T) []T {
+type constrainCustom interface {
+	int | string
+}
+
+func reverse[T constrainCustom](slice []T) []T {
 	newSlices := make([]T, len(slice))
 
 	newSlicesLen := len(slice) - 1
